@@ -1,0 +1,13 @@
+## Overview
+Cybersecurity analysts have uncovered a malware campaign that uses TikTok videos to trick users into installing information-stealing software. The campaign, which surfaced in May 2025, features AI-generated content that encourages viewers to run suspicious PowerShell commands on their computers. These videos often pose as tech tutorials or software hacks, targeting users looking for free upgrades or app enhancements. Once executed, the commands download malware such as Vidar and StealC, which are capable of harvesting browser data, credentials, and cryptocurrency wallet information. The campaign has been linked to a broader trend of social engineering attacks that rely on user interaction rather than traditional exploits. 
+
+The malicious TikTok videos instruct users to open the Windows Run dialog and paste a command into PowerShell, claiming it will unlock premium features or fix app issues. In reality, the command connects to a remote server and silently installs malware in memory, bypassing many antivirus tools. The attackers use legitimate system utilities like curl or MSIExec to avoid detection. The campaign has been tied to a tactic known as “ClickFix,” where users are manipulated into executing malware themselves. Although TikTok has removed many of the offending accounts, the videos’ viral nature means similar content could reappear quickly.
+
+### Why it matters:
+This campaign highlights the growing use of social media platforms as delivery channels for malware. TikTok’s massive user base and algorithm-driven content discovery make it an ideal environment for spreading deceptive videos. The use of AI-generated content adds another layer of sophistication, allowing attackers to scale their efforts and tailor messages to specific audiences. Because the malware is installed through user actions and runs in memory, it often evades traditional endpoint defenses. Security experts urge users to be cautious of unsolicited tech advice on social platforms and recommend monitoring for unusual PowerShell activity as a key detection strategy.
+
+### References
+- [The Hacker News: Hackers Use TikTok Videos to Distribute Infostealer Malware](https://thehackernews.com/2025/05/hackers-use-tiktok-videos-to-distribute.html)
+- [BleepingComputer: TikTok Videos Push Infostealer Malware in ClickFix Attacks](https://www.bleepingcomputer.com/news/security/tiktok-videos-now-push-infostealer-malware-in-clickfix-attacks/)
+- [Infosecurity Magazine: AI-Generated TikTok Videos Spread Infostealer Malware](https://www.infosecurity-magazine.com/news/ai-tiktok-videos-infostealer/)
+

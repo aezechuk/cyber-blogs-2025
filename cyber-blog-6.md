@@ -1,0 +1,12 @@
+## Overview
+Security experts are calling attention to a new supply chain attack known as "slopsquatting," which involves AI-generated misinformation, termed "hallucinations". As developers increasingly use coding tools like GitHub Copilot, ChatGPT, and DeepSeek, attackers are expected to exploit AI's tendency to fabricate software packages, tricking users into downloading malicious content. Although no incidents have been reported as of April 2025, slopsquatting is emerging as a significant risk due to the growing reliance on generative AI tools in software development. This raises concerns about the potential for threats to be unknowingly integrated into applications by their legitimate creators.
+
+This issue has gained attention following a recent joint study by researchers at the University of Texas at San Antonio, Virginia Tech, and the University of Oklahoma. The study examined 576,000 Python and JavaScript samples from 16 popular LLMs, finding that nearly 20% of packages suggested by AI were non-existent. Additionally, 43% of these non-existent package suggestions were repeatedly produced in a series of 10 queries, highlighting the persistent nature of these occurrences. This underscores the potential for attackers to identify the same package names and create malicious versions, posing a serious threat to software security.
+
+### Why it matters:
+A 2024 GitHub survey of software development teams in four countries revealed that nearly 97% of respondents use generative AI at work. As generative AI becomes more embedded in coding workflows, it's crucial to highlight that vibe coding comes with considerable risk. Developers should be trained to follow best practices, including namespace usage and version pinning, be attentive to typos in package names. Furthermore, validating packages before installation is essential to ensure security and integrity.
+
+### References
+- [TechRepublic: Slopsquatting and the Cybersecurity Risks of AI “Vibe Coding”](https://www.techrepublic.com/article/news-slopsquatting-vibe-coding-ai-cybersecurity-risk/)
+- [CSO Online: AI Hallucinations Lead to New Software Supply Chain Threat—Slopsquatting](https://www.csoonline.com/article/3961304/ai-hallucinations-lead-to-new-cyber-threat-slopsquatting.html)
+- [arXiv: Measuring and Understanding Hallucinated Package Recommendations by Large Language Models](https://arxiv.org/abs/2406.10279)

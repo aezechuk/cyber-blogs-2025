@@ -1,0 +1,13 @@
+## Overview
+Security researchers from Trend Micro identified a new wave of cyberattacks in early June 2025 involving the Flodrix botnet exploiting a critical vulnerability in Langflow AI. Langflow is a popular platform among developers working in AI startups, enterprise AI teams, and data science labs. Parent company DataStax was acquired by IBM officially, May 2025. The flaw, tracked as CVE-2025-3248, with a critical CVSS score of 9.8, allows remote code execution (RCE) on systems running Langflow versions prior to 1.3.0. Attackers are using this vulnerability to deploy malware that connects infected systems to the Flodrix botnet, especially those exposed directly to the internet without proper access controls.
+
+The attack begins when a malicious actor sends a specially crafted HTTP POST request to Langflow’s /api/v1/validate/code endpoint, exploiting the lack of authentication and input validation. This request triggers the download of a shell script that installs the Flodrix malware, which then links the compromised system to a command-and-control (C2) network. Once connected, the infected machine can be used for distributed denial-of-service (DDoS) attacks or further malware distribution. Trend Micro noted "During our investigation, we identified that the threat actor is hosting different downloader scripts on the same host 80[.]66[.]75[.]121 that serve the same purpose. This indicates that an active development is going on and multiple campaigns is active."
+
+### Why it matters:
+This incident highlights the growing threat posed by botnets exploiting AI infrastructure, particularly as platforms like Langflow, become more widely adopted in enterprise environments. The vulnerability’s ease of exploitation and the availability of public proof-of-concept code make it especially dangerous. Although a patch was released in March 2025, many organizations have yet to update, remaining vulnerable to (RCE), botnet infection, and compromise of proprietary AI models and sensitive training data. If left unpatched, compromised systems could be weaponized for large-scale cyberattacks, including DDoS campaigns and data breaches.
+
+### References
+- [SecurityWeek: Langflow Vulnerability Exploited by Flodrix Botnet](https://www.securityweek.com/recent-langflow-vulnerability-exploited-by-flodrix-botnet/)
+- [The Hacker News: New Flodrix Botnet Variant Exploits Langflow RCE Flaw](https://thehackernews.com/2025/06/new-flodrix-botnet-variant-exploits.html)
+- [Trend Micro: Langflow Vulnerability Exploited to Deploy Flodrix Botnet](https://www.trendmicro.com/en_us/research/25/f/langflow-vulnerability-flodric-botnet.html)
+

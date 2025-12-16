@@ -1,0 +1,21 @@
+HELLCAT Ransomware Group Exploiting Jira Systems Worldwide
+## Overview
+Several companies have experienced breaches in their Jira ticketing systems over the past few months. Threat actors have used sophisticated methods to gain initial access, such as phishing campaigns and exploiting public-facing applications. Their primary technique involves using credentials obtained from infostealer malware campaigns to infiltrate systems, encrypt and exfiltrate data, and sell it to other cybercriminals, continuing the cycle. 
+
+### Notable incidents include:
+- Schneider Electric: In November 2024, Jira systems were compromised, resulting in the theft of over 40 GB of sensitive data.
+- Telefonica: In January 2025, the Jira platform was breached, exposing 2.3 GB of internal and customer-related data.
+- Jaguar Land Rover (JLR): In March 2025, over 700 internal documents were leaked when the company's Jira systems were exploited using third-party credentials.
+- Ascom: On March 16, 2025, HELLCAT exfiltrated approximately 44 GB of data, including source code and confidential documents.
+- Affinitiv: In March 2025, a HELLCAT attack on its Jira system resulted in the theft of a database containing over 470,000 unique emails and more than 780,000 records.
+
+HudsonRock's Cavalier database, maintained since 2018, confirmed that credentials used in the Jaguar Land Rover breach belonged to an LG Electronics employee infected by an infostealer who had third-party credentials to JLR’s Jira server. Days later, JLR was breached again by a different threat actor using credentials matched to LG Electronics employees in the HudsonRock database. These credentials, harvested by infostealers as far back as 2021, remained valid and unchanged for years. These attacks highlight how compromised credentials can be exploited over long periods.
+
+### Why it matters: 
+Jira, used by over 180,000 customers worldwide, is crucial to enterprise workflows. Unauthorized access to Jira can lead to lateral movement, privilege escalation, data extraction, and business operation disruptions. To mitigate these risks, organizations should implement strong monitoring to detect suspicious activities, enforce multi-factor authentication for robust security, regularly update and rotate credentials, and promptly remove third-party access when no longer needed.
+
+### References
+- [Cybersecurity News: Hellcat Ransomware Group Hacked ASCOM](https://cybersecuritynews.com/hellcat-ransomware-group-hacked-ascom/)
+- [SecurityWeek: Hellcat Ransomware Claims Attacks on ASCOM and Jaguar Land Rover](https://www.securityweek.com/ransomware-group-claims-attacks-on-ascom-jaguar-land-rover/)
+- [BleepingComputer: Hellcat Hackers Launch Global Jira Hacking Spree](https://www.bleepingcomputer.com/news/security/hellcat-hackers-go-on-a-worldwide-jira-hacking-spree/)
+- [InfoStealers: Jaguar Land Rover Breached by Hellcat Using an Infostealer Playbook](https://www.infostealers.com/article/jaguar-land-rover-breached-by-hellcat-ransomware-using-its-infostealer-playbook-then-a-second-hacker-strikes/)
