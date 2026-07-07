@@ -1,3 +1,5 @@
+# Apple Issues Security Updates for AirPlay Vulnerabilities
+
 ## Overview
 Apple has rolled out security updates to address 23 vulnerabilities disclosed by security researchers. These flaws, affecting the Apple AirPlay protocol, can be exploited individually or in combination for greater impact. Notable vulnerabilities include CVE-2025-24252, a use-after-free flaw that allows attackers to corrupt process memory, and CVE-2025-24206, an authentication bypass enabling unauthorized access. When exploited together, these vulnerabilities can achieve zero-click remote code execution (RCE), allowing attackers to take control of devices without user interaction.
 
