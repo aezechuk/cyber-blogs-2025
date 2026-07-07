@@ -1,0 +1,1 @@
+A collection of 22 original pieces covering vulnerability research, active exploitation campaigns, and practical security guidance. Topics span critical CVE analysis, nation-state threat activity, enterprise software risk, and accessible cyber hygiene tips. Written to communicate technical concepts clearly for security practitioners and non-technical audiences alike.
