@@ -1,3 +1,5 @@
+# Tycoon 2FA Phishing Kit Makes Stealthy Improvements
+
 ## Overview
 Threat actors have been actively targeting Microsoft 365 and Gmail accounts with an adversary-in-the-middle (AiTM) phishing kit designed to bypass multifactor authentication (MFA) by intercepting communication between users and the legitimate services, capturing session cookies from authenticated sessions. The ready-to-use phishing campaigns, typically distribute phishing pages, as many security professionals would expect, through URL redirects and QR codes embedded in email attachments or bodies. The pages often employ themes related to human resources, finance, or security, leveraging fear-based lures to persuade targets to follow the steps leading to credential sharing and MFA challenge resolution. There have been decoys observed mimicking DocuSign, Microsoft, Adobe, and others.
 
